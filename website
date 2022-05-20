@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)file:///C:/Users/User/Downloads/website%20Sample.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Turnkey</title>
+<style>
+
+.container {
+    background-color: #00FF00;
+    width  :1000px;
+    margin :0px auto 100px auto;
+    
+    
+}
+.header{
+    width :100%;
+    
+}
+.header1{
+    width :48%;
+    padding : 3px 10px;
+    float :left;
+    background-color: #00BFFF;
+     
+} 
+.header2{
+    background-color:#00BFFF;
+    width :48%;
+    Padding :0px 10px;
+    float :left;
+    text-align :right;
+    Font-size:25px;
+    
+
+}
+.subcontainer{
+    Width :100%;
+   
+
+}
+.side1{
+    Width :65%;
+    padding: 15px 20px;
+    float :left;
+    background: white;
+}
+.side2{
+    width :29%;
+    float :left;
+    padding: 4px 10px;
+    background: lightgrey;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+   background-color:black;
+}
+
+li {
+  float: left;
+ 
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 14px 73px;
+  text-decoration: none;
+  background-color: #00008B;
+  width :44%;
+}
+
+li a:hover:not(.active) {
+  background-color: #D2691E;
+}
+
+.active {
+  background-color: #D2691E;
+}
+.down{
+  
+  color: white;
+  
+  padding: 5px ;
+  background-color: #00008B;
+
+}
+.pad{
+   text-align: center;
+   padding:10px 0px;
+}
+body{
+   background-image:url("images/back.jpg")
+}
+</style>
+</head>
+<body>
+
+
+<div class="container">
+   <div class="header">
+ 
+       <div class="header1">
+       <h1>Trunkey</h1>
+       </div>
+       <div class="header2">
+
+       <label style="Font-size:15px;">Search: </label><input type="text"><br>
+       <label>0.000.123.4567</label><br>
+       <label style="color:#FF8C00;Font-size:18px;">info@trunkey.com</label>
+		</div>
+    
+
+    <ul>
+     <li><a class="active" href="file:///C:/Users/User/Downloads/website%20Sample.html#Home">Home</a></li>
+     <li><a href="file:///C:/Users/User/Downloads/website%20Sample.html#Gallery">Gallery</a></li>
+     <li><a href="file:///C:/Users/User/Downloads/website%20Sample.html#Services">Servics</a></li>
+     <li><a href="file:///C:/Users/User/Downloads/website%20Sample.html#Carrier">Carrier</a></li>
+    <li><a href="file:///C:/Users/User/Downloads/website%20Sample.html#About%20Us">About Us</a></li>
+   </ul>
+</div>
+
+	<div class="subcontainer">
+   
+   <div><img src="file:///C:/Users/User/Downloads/images/56716-b600.jpg" alt="image1" style="float:left;width:1000px;height:350px;padding-bottom:15px"></div>  
+
+
+    <div class="down">
+     
+    <div class="pad">OFFERING INDUSTRY <span style="color:#FFD700;">LEADING MANAGEMENT </span>AND <span style="color:#FFD700;">TURNKEY SOLUTION</span> FOR RESIDENTIAL PROPERTIES</div>
+
+    </div>
+       <div class="side1"> 
+    
+       <h3> Welcome to <span style="color:#1E90FF;">Trunkey Property Management of Jacksonvile</span></h3>
+        <p>
+Please note that <span style="color:#FF8C00;">All your data on MEGA</span> is encrypted with your password which only you control. If you want to retain 
+	access to the data in your MEGA account, you either need your password, an active session or your access to the
+
+	Recovery KeyPlease note that all your data on MEGA is encrypted with your password which only you control. If you
+	to the access to the data.</p>
+
+	
+	<p><img src="file:///C:/Users/User/Downloads/images/123.png" alt="image2" style="float:left;width:60px;height:60px;padding:20px"><strong style="color:#FF8C00;">FOR TENANTS</strong><br><br>Please note that all your data on MEGA is encrypted with your password which only you control. If you want to retain 
+	access to the data in your MEGA account, you either need your password, an active session or your access to the
+
+	Recovery Key.</p>
+	
+	
+	<p><img src="file:///C:/Users/User/Downloads/Images/pngwing.com%20(34).png" alt="image3" style="float:left;width:60px;height:60px;padding:20px"><strong style="color:#FF8C00;">FOR OWNERS</strong><br><br>Please note that all your data on MEGA is encrypted with your password which only you control. If you want to retain 
+	access to the data in your MEGA account, you either need your password, an active session or your access to the
+
+	Recovery Key.</p><br><br>
+	<hr style="width:100%">
+	<img src="file:///C:/Users/User/Downloads/Images/pngwing.com%20(39).png" alt="image5" style="float:left;width:80px;height:80px;padding:10px 60px">
+	<img src="file:///C:/Users/User/Downloads/Images/pngwing.com%20(40).png" alt="image6" style="width:80px;height:80px;padding: 10px 60px">
+	<img src="file:///C:/Users/User/Downloads/Images/pngwing.com%20(41).png" alt="image7" style="width:80px;height:80px;padding: 10px 60px">
+       </div>
+   
+       <div class="side2">
+        <h3>NEWSLETTER<span style="color:#1E90FF;"> SINUP</span></h3>
+	
+      <label>Name:</label><br>
+      <input type="text"><br>
+      <label>Email:</label><br>
+      <input type="text"><br>
+      <input type="submit" value="Submit">
+ 	
+	<p><strong>Featured<span style="color:#1E90FF;"> Rentals</span></strong></p>
+	
+	<img src="file:///C:/Users/User/Downloads/images/images%20(3).jpg" alt="image4" width="280px" height="150px">	
+	<p><strong style="color:#1E90FF;">For tenantses</strong><br>
+	Please note that all your data on MEGA is encrypted with your password which only you control. If you want to retain 
+	access to the data in your MEGA account, you either need your password.</p>
+        <p style="text-align :right;color:#FF8C00;">Read More &gt;&gt;</p>
+       </div>
+	
+ </div>
+ <div><h1>dkbab.we</h1>
+ </div>
+</div>
+
+</body></html>
