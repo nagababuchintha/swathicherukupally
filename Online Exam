@@ -1,0 +1,165 @@
+<!doctype>
+<html>
+    <!--<head>
+        <script src="stopwatch.js"></script>
+        <style>
+        .button_class {
+  padding: 5px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin:2px;
+}
+
+.button_class:hover {background-color: #3e8e41}
+
+.button_class:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+        </style>
+    </head>-->
+    <body>
+        <!-- TODO: Add options to the stopwatch element to change behavior and display of the stopwatch -->
+        <div class="stopwatch"></div>
+          <select>
+            <option value="volvo">1</option>
+            <option value="saab">2</option>
+            <option value="opel">5</option>
+            <option value="audi">10</option>
+          </select>
+         <div class="stopwatch"></div>
+          <select>
+            <option value="volvo">1</option>
+            <option value="saab">2</option>
+            <option value="opel">5</option>
+            <option value="audi">10</option>
+          </select>
+              <div class="stopwatch"></div>
+          <select>
+            <option value="volvo">1</option>
+            <option value="saab">2</option>
+            <option value="opel">5</option>
+            <option value="audi">10</option>
+          </select>
+              <div class="stopwatch"></div>
+          <select>
+            <option value="volvo">1</option>
+            <option value="saab">2</option>
+            <option value="opel">5</option>
+            <option value="audi">10</option>
+          </select>
+    </body>
+    <script src="index.js"></script>
+</html>
+let stopwatch = function(elem, options) {
+
+    let timer           = createTimer(),
+        startButton     = createButton("Start", start), 
+        stopButton      = createButton("Stop", stop), 
+        resetButton     = createButton("Reset", reset), 
+        offset, 
+        clock, 
+        interval;
+
+    elem.appendChild(timer); 
+    elem.appendChild(startButton); 
+    // elem.appendChild(stopButton); 
+    elem.appendChild(resetButton); 
+
+    reset(); 
+
+    // TODO: Add a class to the timer element Done
+    // TODO: Have the timer display in block mode Done
+    function createTimer() {
+        x = document.createElement("span");
+      x.classList.add('timer_class');
+        x.style.display='block';
+      x.style.fontSize ="x-large";
+      return x;
+    }; 
+
+    // TODO: Add a class to the button Done
+    // TODO: Make the button look nicer Done
+    // TODO: Set the width of the buttons to be constant, center the text, add border, click animation Done
+    function createButton(label, fn) {
+        
+        var btn = document.createElement("btn");
+        btn.classList.add('button_class');
+        btn.href = "#" + label; 
+        btn.innerHTML = label; 
+        btn.addEventListener("click", function(event) {
+            fn(); 
+            event.preventDefault(); 
+        });
+        return btn; 
+    };
+
+    // TODO: Remove the stop button and toggle the start button to start/stop button Done
+    // TODO: When the timer is running the label should be Stop Done
+    // TODO: When the timer is stopped the label should be Start Done
+    function start() {
+        if (!interval) {
+            offset = Date.now(); 
+            interval = setInterval(update, 10);
+            startButton.innerHTML='Stop';
+        }else{
+            clearInterval(interval); 
+            interval = null;
+          startButton.innerHTML='Start';
+        }
+    };
+
+    // function stop() {
+    //     if (interval) {
+    //         clearInterval(interval); 
+    //         interval = null; 
+    //     }
+    // }; 
+
+    function reset() {
+        clock = 0; 
+        render(); 
+    }; 
+
+    // TODO: Create an option for how fast the update of the timer occurs
+    // TODO: For example, one of the timers on the page is updated once every 5 seconds
+    function update() {
+        
+        clock += delta(); 
+        render();
+    };
+
+    function delta() {
+        let now = Date.now(), 
+            d   = now - offset; 
+
+        offset = now;
+        return d; 
+    };
+
+    // TODO: Display in Days:Hours:Minutes:Seconds.Hundreths e.g. 4:13:22:18.22 Done
+    // TODO: Do not show Days if there are no days
+    // TODO: Do not show hours if there are no hours
+    // TODO: Add an option to show in the DD:HH:MI:SS.mm format or the SS.mm format
+    // TODO: Add an option for 24 hour vs 12 hour mode
+    function render() {
+        let t = clock / 1000; 
+      if(Math.floor(t / 86400)){
+        
+      }
+        timer.innerHTML = Math.floor(t / 86400)+':'+Math.floor(t / 3600) % 24 +':'+Math.floor(t / 60) % 60+':'+ parseFloat(t).toFixed(2);
+    };
+};
+
+
+let stopwatches = document.getElementsByClassName("stopwatch"); 
+
+for (let i=0; i<stopwatches.length; i++) {
+    stopwatch(stopwatches[i]); 
+};
