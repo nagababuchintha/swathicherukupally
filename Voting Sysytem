@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>6 week</title>
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="jumbotron text-center">
+				<div class="row">
+					<h1 class="col-md-6">This is right answer</h1>
+					<h1 class="col-md-6">Nope, this is right answer</h1>
+					<div class="col-md-6">
+						<button class="btn btn-primary btn-lg" rel="first">Vote for this option</button>
+					</div>
+					<div class="col-md-6">
+						<button class="btn btn-primary btn-lg" rel="second">Vote for this option</button>
+					</div>
+					<h2 class="col-md-6" id="first"></h2>
+					<h2 class="col-md-6" id="second"></h2>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/app.js"></script>
+
+</body>
+</html>
+
+
+var dudes = document.querySelectorAll('.btn');
+dudes = Array.prototype.slice.call( dudes );
+
+dudes.forEach(function (dude) {
+
+	updateDude( dude );
+
+	// on click, increase score
+	dude.addEventListener('click', function () {
+
+		increaseScore(dude);
+
+	});
+
+});
+
+// first -> scoreFirst
+function getKeyFrom( dude ) {
+	return 'score' + _.capitalize( dude.getAttribute('rel') );
+}
+
+// get scoreFirst from localStorage
+function getScore( dude ) {
+	return +localStorage.getItem( getKeyFrom(dude) ) || 0;
+}
+
+// set scoreFirst in localStorage
+function setScore( dude, score ) {
+	localStorage.setItem( getKeyFrom(dude), score );
+}
+
+// update scoreFirst in localStorage
+function updateDude( dude ) {
+	var score   = getScore(dude),
+	    element = document.querySelector('#' + dude.getAttribute('rel'));
+	element.textContent = score;
+}
+
+// increase scoreFirst in localStorage
+function increaseScore(dude) {
+	var score = getScore(dude);
+	score++;
+
+	setScore(dude, score);
+
+	updateDude(dude);
+}
