@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>sa</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row"><h2 style="margin-left: 500px;color:black">LAB ATTENDACE</h2>
+			<div class="col-md-3" style="background-color: lightgreen;height:700px;"></div>
+            <div class="col-md-6">
+            	<br>
+            	<div class="row"style="background-color:white;height: 100px">
+            	<label></label>
+            	<input type="text" placeholder="scan id here">
+            	<h5>detail found</h5></div><br><br>
+            	<div class="row"style="background-color: white;height: 500px">
+            	<center><h4>student details</h4></center>
+            	<form>
+            		<label>Name:</label>
+            		<input class="form-control" type="text"  placeholder="name"><br>
+            		<label>Rollno:</label>
+            		<input class="form-control" type="text" placeholder="Rollno"><br>
+            		<label>Department:</label>
+            		<input class="form-control" type="text"  placeholder="Department"><br>
+            		<label>Year:</label>
+            		<input class="form-control" type="text" placeholder="Year"><br>
+            		<label>college:</label>
+            		<input class="form-control" type="text"  placeholder="college"><br>
+            		<label>Email:</label>
+            		<input class="form-control" type="email"  placeholder="Email"><br>
+            	</form></div></div>
+            	<div class="col-md-3" style="background-color: lightgreen;height:400px;"></div>
+            
+        </div>
+    </div>
+</body>
+</html>
