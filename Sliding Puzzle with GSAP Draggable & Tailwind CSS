@@ -1,0 +1,217 @@
+<html>
+<head>
+<title>Sliding Puzzle with GSAP Draggable & Tailwind CSS</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+body {
+  font-family: 'Manrope', sans-serif;
+}
+
+.piece:not(.draggable) {
+  cursor: default !important;
+}
+</style>
+</head>
+<body>
+<section class="bg-stone-100 text-stone-900 p-10 lg:p-20 xl:px-40 min-h-screen flex flex-col justify-center items-center overflow-hidden relative z-10 cursor-default">
+  
+  <div class="absolute inset-0 -z-10 overflow-hidden blur-3xl opacity-30 pointer-events-none" style="transform:translateZ(0) translate3d(0,0,0);">
+    <svg class="w-full h-full absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 scale-125" viewBox="0 0 1425 1119" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><radialGradient id="a" cx="712.5" cy="559.5" gradientUnits="userSpaceOnUse" r="640.5843"><stop offset="0" stop-color="#d7ff96"/><stop offset=".2705" stop-color="#d5fe93"/><stop offset=".4613" stop-color="#d1fc8a"/><stop offset=".6276" stop-color="#c8f87a"/><stop offset=".7799" stop-color="#bcf264"/><stop offset=".9212" stop-color="#adeb48"/><stop offset="1" stop-color="#a3e635"/></radialGradient><path d="m76.6 98c102.5-76.8 532.4-197 253.5 48.8s251.7 32.8 343.7 81.6-69.5 382.7-226.3 342.4-204.7-249.6-340-143.6-139.9-247.6-30.9-329.2zm983.4 868.8c118.6-107.8 166.1-217.7 314.9-310.3 148.8-92.7-73.3-140.1-155.3-60.3-82 79.7-166.8-10.9-256.6 142.2-73.3 125-21.6 336.2 97 228.4zm-899.1-142.6c23.1-38.3 225.3 16.2 235.8 91.7 6.7 48.7-69.5 82.1-57.6 136.3 10.2 46.4 77.6 73.3 83.8 65.5 14.7-18.2-293.7-241-262-293.5z" fill="url(#a)"/></svg>
+  </div>
+  
+  <div class="relative z-10 grid md:grid-cols-2 lg:grid-cols-12 gap-x-12 gap-y-10 max-w-screen-2xl">
+    
+    <div class="lg:col-span-5 flex flex-col justify-center">
+      
+      <span class="inline-block self-start px-2 md:px-3 py-1 mb-2 md:mb-8 rounded bg-lime-400 uppercase font-medium text-xs tracking-widest leading-none md:text-sm">New game</span>
+      
+      <h1 class="mb-1 md:mb-4 text-3xl md:text-5xl lg:text-6xl 2xl:text-7xl font-bold tracking-tight leading-tight">Play with the Sliding Puzzle!</h1>
+      
+      <p class="text-stone-500 text-lg lg:text-xl 2xl:text-3xl">Discover the image by moving the pieces one by one.</p>
+      
+      <div class="mt-4 md:mt-12 flex flex-wrap md:flex-nowrap gap-4">
+        <button type="button" id="reset" disabled class="grow px-5 py-2 md:py-3 text-center lg:text-lg tracking-wide rounded-full text-white bg-stone-800 hover:bg-stone-700 active:bg-stone-900 disabled:bg-stone-400 disabled:opacity-50 transition">Start again</button>
+        <a href="https://www.linkedin.com/in/jorgecheevers/" target="_blank" rel="noopener" class="grow px-5 py-2 md:py-3 text-center lg:text-lg tracking-wide rounded-full ring-1 ring-inset ring-stone-100 hover:ring-lime-500 active:bg-stone-50 transition">Contact me</a>
+      </div>
+      
+    </div>
+    
+    <div class="lg:col-span-6 lg:col-start-7 flex flex-col justify-center gap-y-0.5">
+      
+      <div id="puzzle" class="w-full relative">
+        
+        <div class="piece empty absolute" data-position-left="1" data-position-top="1"></div>
+        <div class="piece absolute p-[3px]" data-position-left="2" data-position-top="1">
+          <div class="piece-inner w-full h-full rounded bg-center bg-no-repeat bg-cover bg-[url(https://kdrive.infomaniak.com/app/share/457035/03ef02e7-6bcd-4719-b144-665ea831b144/2077/preview)]"></div>
+        </div>
+        <div class="piece absolute p-[3px]" data-position-left="3" data-position-top="1">
+          <div class="piece-inner w-full h-full rounded bg-center bg-no-repeat bg-cover bg-[url(https://kdrive.infomaniak.com/app/share/457035/03ef02e7-6bcd-4719-b144-665ea831b144/2073/preview)]"></div>
+        </div>
+        <div class="piece absolute p-[3px]" data-position-left="1" data-position-top="2">
+          <div class="piece-inner w-full h-full rounded bg-center bg-no-repeat bg-cover bg-[url(https://kdrive.infomaniak.com/app/share/457035/03ef02e7-6bcd-4719-b144-665ea831b144/2075/preview)]"></div>
+        </div>
+        <div class="piece absolute p-[3px]" data-position-left="2" data-position-top="2">
+          <div class="piece-inner w-full h-full rounded bg-center bg-no-repeat bg-cover bg-[url(https://kdrive.infomaniak.com/app/share/457035/03ef02e7-6bcd-4719-b144-665ea831b144/2080/preview)]"></div>
+        </div>
+        <div class="piece absolute p-[3px]" data-position-left="3" data-position-top="2">
+          <div class="piece-inner w-full h-full rounded bg-center bg-no-repeat bg-cover bg-[url(https://kdrive.infomaniak.com/app/share/457035/03ef02e7-6bcd-4719-b144-665ea831b144/2081/preview)]"></div>
+        </div>
+        <div class="piece absolute p-[3px]" data-position-left="1" data-position-top="3">
+          <div class="piece-inner w-full h-full rounded bg-center bg-no-repeat bg-cover bg-[url(https://kdrive.infomaniak.com/app/share/457035/03ef02e7-6bcd-4719-b144-665ea831b144/2076/preview)]"></div>
+        </div>
+        <div class="piece absolute p-[3px]" data-position-left="2" data-position-top="3">
+          <div class="piece-inner w-full h-full rounded bg-center bg-no-repeat bg-cover bg-[url(https://kdrive.infomaniak.com/app/share/457035/03ef02e7-6bcd-4719-b144-665ea831b144/2078/preview)]"></div>
+        </div>
+        <div class="piece absolute p-[3px]" data-position-left="3" data-position-top="3">
+          <div class="piece-inner w-full h-full rounded bg-center bg-no-repeat bg-cover bg-[url(https://kdrive.infomaniak.com/app/share/457035/03ef02e7-6bcd-4719-b144-665ea831b144/2079/preview)]"></div>
+        </div>
+      </div>
+        
+      <div class="text-xs p-1 text-lime-800">
+        <span class="opacity-50">Picture by</span> <a href="https://unsplash.com/fr/photos/gW3ddTAKTJg" target="_blank" rel="noopener" class="opacity-50 transition hover:underline hover:opacity-100">Johannes Hofmann</a>
+      </div>
+      
+    </div>
+    
+  </div>
+</section>
+</body>
+</html>
+
+const puzzle = document.getElementById('puzzle'),
+      pieces = puzzle.getElementsByClassName('piece'),
+      gridColumns = 3,
+      gridRows = 3,
+      gridWidth = Math.round(puzzle.offsetWidth / gridColumns),
+      gridHeight = gridWidth,
+      overlapThreshold = '20%'
+      buttonReset = document.getElementById('reset');
+
+const swapOverlap = (el) => {
+  for(let i = 0; i < pieces.length; i++) {
+    const piece = pieces[i];
+    if (el.hitTest(piece, overlapThreshold)) {
+      if (piece.classList.contains('empty')) {
+        TweenLite.to(
+          piece,
+          0.2,
+          {
+            x: el.startX,
+            y: el.startY,
+          }
+        );
+        buttonReset.disabled = false;
+      } else {
+        TweenLite.to(
+          el.target,
+          0.2,
+          {
+            x: el.startX,
+            y: el.startY,
+          }
+        );
+      }
+    }
+  }
+};
+
+gsap.set(
+  puzzle,
+  {
+    width: gridColumns * gridWidth,
+    height: gridRows * gridHeight,
+  }
+);
+
+for(let i = 0; i < pieces.length; i++) {
+  const piece = pieces[i];
+  const {positionLeft, positionTop} = pieces[i].dataset;
+  
+  gsap.set(
+    piece,
+    {
+      width: gridWidth,
+      height: gridHeight,
+      x: gridWidth * (positionLeft - 1),
+      y: gridWidth * (positionTop - 1),
+    }
+  );
+  
+  buttonReset.addEventListener('click', (e) => {
+    buttonReset.disabled = true;
+    TweenLite.to(
+      piece,
+      0.2,
+      {
+        x: gridWidth * (positionLeft - 1),
+        y: gridWidth * (positionTop - 1),
+      }
+    );
+    setTimeout(() => {
+      draggablePieces();
+    }, 300);
+    e.preventDefault();
+  });
+};
+
+const draggablePieces = () => {
+  const offsetEmpty  = puzzle.querySelector('.empty').getBoundingClientRect();
+
+  for(let i = 0; i < pieces.length; i++) {
+    const piece = pieces[i];
+    const offsetPiece = piece.getBoundingClientRect();
+    
+    if (!piece.classList.contains('empty')) {
+      if (
+        Math.abs(Math.floor(offsetPiece.left) -  Math.floor(offsetEmpty.right)) <= 10 && offsetPiece.top === offsetEmpty.top ||
+        Math.abs(Math.floor(offsetPiece.right) - Math.floor(offsetEmpty.left)) <= 10 && offsetPiece.top === offsetEmpty.top ||
+        Math.abs(Math.floor(offsetPiece.top) - Math.floor(offsetEmpty.bottom)) <= 10 && offsetPiece.left === offsetEmpty.left ||
+        Math.abs(Math.floor(offsetPiece.bottom) - Math.floor(offsetEmpty.top)) <= 10 && offsetPiece.left === offsetEmpty.left
+      ) {
+        piece.classList.add('draggable');
+      } else {
+        piece.classList.remove('draggable');
+      }
+    }
+  }
+}
+draggablePieces();
+
+Draggable.create(
+  pieces,
+  {
+    bounds: puzzle,
+    dragResistance: 1,
+    edgeResistance: 0.9,
+    throwResistance: 9999999,
+    maxDuration: 0.2,
+    minDuration: 0.1,
+    overshootTolerance: 0,
+    type: 'x,y',
+    inertia: true,
+    snap: {
+      x: function(endValue) {
+        return Math.round(endValue / gridWidth) * gridWidth;
+      },
+      y: function(endValue) {
+        return Math.round(endValue / gridHeight) * gridHeight;
+      }
+    },
+    onPressInit: function() {
+      this.startX = gsap.getProperty(this, 'x');
+      this.startY = gsap.getProperty(this, 'y');
+      if (this.target.classList.contains('draggable')) {
+        this.dragResistance = 0;
+      } else {
+        this.dragResistance = 1;
+      }
+    },
+    onThrowComplete: function() {
+      swapOverlap(this);
+      setTimeout(() => {
+        draggablePieces();
+      }, 300);
+    },
+  }
+);
