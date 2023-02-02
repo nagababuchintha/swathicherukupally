@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="X-UA-Compatible" content="IE=9"> 
+    <title>Page Not Found</title>
+    <style>
+        BODY {
+            background-color: #F2F4E9;
+        }
+        .msg-frame {
+            width:480px;
+            height:200px;
+            position:absolute;
+            left:50%;
+            top:50%;
+            margin:-100px 0 0 -240px;
+            background-image:url(../images/frame.png);
+            background-repeat:no-repeat;
+        }
+        .msg-body {
+            width:450px;
+            height:170px;
+            position:relative;
+            left:15px;
+            top:10px;
+        }
+        .msg-body-content {
+            position:relative;
+            top:10px;
+        }
+        .msg-icon {
+            width:440px;
+            height:80px;
+            position:relative;
+            left:5px;
+            background-image:url(../images/pagenotfound.png);
+            background-repeat:no-repeat;
+        }
+        .msg-text {
+            position:relative;
+            top:10px;
+            font-family:Arial; font-size:11pt;
+        }
+    </style>
+</head>
+<body>
+    <div class="msg-frame">
+        <div class="msg-body">
+            <div class="msg-body-content">
+                <div class="msg-icon"></div>
+                <div class="msg-text">
+                    Sorry, but the page that you're looking for cannot be found.
+                    If you typed in the address, try double checking the spelling.
+                    Otherwise, please let your administrator know that a link seems to be broken.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
