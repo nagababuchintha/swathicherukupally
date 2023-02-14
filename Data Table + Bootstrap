@@ -1,0 +1,153 @@
+<html>
+<head>
+<title>Data Table + Bootstrap</title>
+<style>
+.dataTables_length,
+.dataTables_filter {
+    display: inline-block;
+    margin-left: 1.5rem;
+}
+.dt-button-collection {
+    width: auto !important;
+    .dt-button:not(.dt-btn-split-drop) {
+        min-width: 4rem !important;
+    }
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="my-2">
+        <table id="datatable" class="table table-sm table-striped table-hover compact hover stripe">
+            <thead class="table-secondary">
+                <tr class="shadow-sm">
+                    <th style="width:14px">
+                        <input class="form-check-input" type="checkbox">
+                    </th>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Office</th>
+                    <th>Age</th>
+                    <th>Start date</th>
+                    <th>Salary</th>
+                    <th>&nbsp;</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>
+
+"use strict";
+$(function () {
+    const dtSelector = "#datatable";
+    const dt = $(dtSelector).DataTable({
+        fixedHeader: { header: true },
+        /**
+         * @see https://datatables.net/plug-ins/i18n/
+         */
+        language: {
+            url: "https://cdn.datatables.net/plug-ins/1.12.1/i18n/ru.json"
+        },
+        pagingType: "simple_numbers",
+        lengthMenu: [15, 30, 60],
+        order: [],
+        dom: `<'row'<'col-sm-12 col-md-6'B><'col-sm-12 col-md-6 d-flex justify-content-end'fl>>
+              <'row dt-row'<'col-sm-12'tr>>
+              <'row'<'col-sm-12 col-md-5'i><'col-sm-12 col-md-7'p>>`,
+        initComplete: function (settings, json) {
+            $(`${dtSelector}_wrapper .dt-buttons .btn`).addClass("btn-sm");
+            $(`${dtSelector}_paginate .pagination`).addClass("pagination-sm");
+            $(`${dtSelector}_info`).addClass("pt-1");
+            $(`${dtSelector} > thead .form-check-input`).on(
+                "click",
+                function () {
+                    $(`${dtSelector} > tbody .form-check-input`).prop(
+                        "checked",
+                        $(this).prop("checked")
+                    );
+                }
+            );
+        },
+        buttons: {
+            /**
+             * @see https://datatables.net/reference/button/
+             */
+            buttons: [
+                {
+                    text: "Add new record",
+                    attr: {
+                        role: "button",
+                        class: "btn btn-primary btn-create"
+                    },
+                    action: function (datatable) {
+                        /** @todo Add action code */
+                        alert("Add new record!");
+                    }
+                },
+                {
+                    extend: "collection",
+                    text: "Export",
+                    autoClose: true,
+                    buttons: ["csvHtml5", "excelHtml5", "pdfHtml5"]
+                },
+                "print"
+            ]
+        },
+        columnDefs: [
+            {
+                targets: 0,
+                data: "id",
+                orderable: false,
+                searchable: false,
+                render: function (data, type, row, meta) {
+                    return `<input type="checkbox" class="form-check-input" name="rows[${data.id}]" value="1">`;
+                }
+            },
+            {
+                targets: -1,
+                data: "id",
+                orderable: false,
+                searchable: false,
+                render: function (data, type, row, meta) {
+                    return `<a class="btn btn-sm btn-primary btn-edit me-1 px-2" role="button" href="#edit/${data.id}">Edit</a>
+                        <a class="btn btn-sm btn-danger btn-delete px-2" role="button" href="#delete/${data.id}">Delete</a>`;
+                }
+            }
+        ],
+        /**
+         * @see https://datatables.net/manual/server-side
+         */
+        // serverSide: true,
+        /**
+         * @see https://datatables.net/examples/server_side/simple.html
+         */
+        ajax: {
+            url:
+                "https://gist.githubusercontent.com/WinterSilence/e9b4361dde4f53d7070638d950ed33b2/raw/23130380f1632746afd9eadfa48c7819a6026a62/data.json",
+            dataSrc: "data"
+        },
+        columns: [
+            { data: null, type: "html", className: "text-center align-middle" },
+            { data: "name", type: "string", className: "align-middle" },
+            { data: "position", type: "string", className: "align-middle" },
+            { data: "office", type: "string", className: "align-middle" },
+            { data: "extn", type: "num", className: "align-middle" },
+            { data: "start_date", type: "date", className: "align-middle" },
+            { data: "salary", type: "num-fmt", className: "align-middle" },
+            { data: null, type: "html", className: "text-end" }
+        ]
+    });
+    dt.on("page.dt", function () {
+        $(`${dtSelector} > thead .form-check-input`).prop("checked", false);
+        let timer = setInterval(function () {
+            const pagination = $(`${dtSelector}_paginate .pagination`);
+            if (pagination.length > 0) {
+                pagination.addClass("pagination-sm");
+                clearInterval(timer);
+            }
+        }, 5);
+    });
+});
