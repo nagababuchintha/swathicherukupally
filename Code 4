@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-GT1JFP7Q9G"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-GT1JFP7Q9G');
+	</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noarchive,nofollow">
+    <title></title>
+    <link href="/propertysearch/Content/themes/Redmond/scpa?v=1BnJakDSdliVOXJXiJ4LJxmFhdY4gx1MWPr0u_FEZqQ1" rel="stylesheet"/>
+
+    <link href="/propertysearch/bundles/css?v=GYRlIJ8YgiQmJ_SaKRocpEABEthnoe9j8OD9RkKmKsY1" rel="stylesheet"/>
+
+    <link href="/propertysearch/bundles/select2Override?v=HZQR69E7Afi04aKwnGkX3CdseOTxuHVA8HpPSIJube41" rel="stylesheet"/>
+
+    
+    <link href="/propertysearch/Content/parcel-details.min.css" rel="stylesheet" type="text/css" media="print" />
+
+</head>
+<body>
+    <div class="top-bar hide-on-print"></div>
+
+    <header>
+
+        <!--[if lt IE 1]>
+            <div style="margin-bottom: 20px;">
+            <div id="browser-warning-window" style="display:none;position:fixed;z-index:999;left:0;top:-10px;width:100%;background:#FFE972;border:2px solid #EEC900;margin:0 auto;padding:10px;">
+                <p style="text-align:center;color:#8B7500;font-weight:bold;">This site works best using Internet Explorer 9 or above.&nbsp;<a id="browser-warning"href="javascript:void(0);">Close Message</a></p>
+            </div>
+          </div>
+        <![endif]-->
+        <!--[if lt IE 9]>
+             <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <![endif]-->
+        <div id="container2">
+            <a href="/" title="Home">
+                <img src="/propertysearch/Content/Images/header.png" border="0" alt="Site Banner" />
+            </a>
+        </div>
+        <div class="menu">
+
+            <nav>
+                <a class="action" href="//www.sc-pa.com">Home</a>
+                <a class="action" href="/propertysearch/">Quick Search</a>
+                <a class="action" href="/propertysearch/Search/Advanced">Advanced Search</a>
+                <a class="action" href="/propertysearch/Tangible/Search">Tangible Search</a>
+                <a class="action" href="https://www.sc-pa.com/contact-us/contact-a-department">Feedback</a>
+            </nav>
+        </div>
+    </header>
+
+    <div id="container" role="main" class="page-wrap">
+        <!-- Insert default "BasicPage" markup here -->
+        
+
+
+
+
+
+<div style="width: 99%; margin-top: 10px;margin-bottom:24px;" id="targetElemForTooltips">
+    <div style="float: left; width: 16px; margin-top: 2px;"><a class="app-links" href="/propertysearch/parcel/details/0046050007" id="prevstrap"><img src="/propertysearch/Content/images/arrow_left-16.png" border="0" title="0046050007" alt="Previous" rel="tooltip" /></a></div>
+    <div style="float: left; width: auto;padding-left:13px;padding-right:13px;text-align: center;"><span class="large bold">Property Record Information for 0046050008</span></div>
+    <div style="float: left; width: 16px; margin-top: 2px;"><a class="app-links" href="/propertysearch/parcel/details/0046050009" id="nextstrap"><img src="/propertysearch/Content/images/arrow_right-16.png" border="0" title="0046050009" alt="Next" rel="tooltip" /></a></div>
+    <div class="app-links ui-corner-all ui-widget-content" style="float: right;width: 180px;padding:2px;text-align: center;margin-top:10px;">
+<form action="/propertysearch/Result" method="POST" class="quicksearch">
+    <input type="text" size="20"  placeholder="Account #/Parcel ID" title="Account #/Parcel ID" id="search" name="strap"/>
+    <input type="submit" value="View Another Parcel" style="margin-top:2px;margin-left:2px;width:161px;" />
+</form></div>
+    <br style="clear: left;" />
+    <div style="white-space:nowrap;margin-top:14px;">
+        <nav>
+            <ul>
+                
+
+                <li style="display:inline;" id="button-set-1">
+                        <a id="map-link" href="https://ags3.scgov.net/scpa/?esearch=0046050008&amp;slayer=0" target="_blank" class="no-print">Map</a>
+                </li>
+
+                <li style="display:inline;" id="button-set-1"><a id="print-link" href="/propertysearch/parcel/details/0046050008" class="no-print">Print Summary</a></li>
+
+                
+                
+                <li style="display:inline;" id="button-set-1">
+                        <a id="disabled-link" href="javascript:void(0);" title="2022 TRIM" class="disabled-button no-print" rel="tooltip">2022 TRIM</a>
+                </li>
+
+                
+
+                <li style="display:inline;" id="button-set-1">
+<a class="no-print" href="/propertysearch/prc/0046050008" id="prc-link" rel="tooltip" title="This property record card is accurate as of the date on the lower-right hand corner of the page ONLY. It is updated when the tax roll is certified to the Florida Department of Revenue. The most current information for the property can be found on our website’s property record information page.">2023 Record Card</a>                </li>
+
+                
+
+                <li style="display:inline;" id="button-set-1">
+                        <a id="tax-link" href="http://www.sarasotataxcollector.com/ecomm/proc.php?r=eBillingInvitation&amp;a=0046050008" title="View Tax Bill on Tax Collector&#39;s Website" rel="tooltip" target="_blank" class="no-print">Tax&nbsp;Bill</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<ul class="resultl spaced">
+    <li class="med bold">Ownership:</li>
+
+    <li>SUZANNE M HATATAH REVOCABLE LIVING TRUST</li>
+    <li>HATATAH SUZANNE M (TTEE)</li>
+        <li> 690 EASTPOINTE PKWY, SARASOTA, FL, 34232-2251</li>
+    <li class="app-links small"><a href="https://www.sc-pa.com/contact-us/address-change?9e7aca1a-419c-4aed-953f-4878ccb96c67=0046050008&amp;acct=0046050008">Change mailing address</a></li>
+    <li class="med bold">Situs Address:</li>
+    <li>690 EASTPOINTE PKWY SARASOTA, FL, 34232</li>
+</ul>
+<ul class="resultr spaced">
+    <li><strong>Land Area:</strong> 7,405 Sq.Ft.</li>
+    <li><strong>Municipality:</strong> Sarasota County</li>
+    <li><strong>Subdivision:</strong> 2275 - EASTPOINTE PHASE 01</li>
+    <li><strong>Property Use:</strong> 0100 - Single Family Detached</li>
+    <li><strong>Status</strong> OPEN</li>
+    <li><strong>Sec/Twp/Rge:</strong> 24-36S-18E</li>
+    <li><strong>Census:</strong> 121150013012</li>
+    <li><strong>Zoning:</strong> RSF2 - RESIDENTIAL, SINGLE FAMILY&nbsp;</li>
+        <li><strong>Total Living Units:</strong>1</li>
+        <li><strong>Parcel&nbsp;Description:</strong> 
+LOT 36 EASTPOINTE PHASE 1</li>
+</ul>
+
+    <span class="h2" style="margin-bottom:18px;">Buildings </span>
+<table id="Buildings" class="grid"><thead><tr><th align="left" title="Please click on situs address link(s) for building details.">Situs - click address for building details<span class='ui-icon ui-icon-info' style='display:inline-block;cursor:help;'></span></th><th align="center">Bldg #</th><th align="center">Beds</th><th align="center">Baths</th><th align="center">Half Baths</th><th align="center">Year Built</th><th align="left" title="Effective Year Built - An appraisal judgment which reflects the condition and utility of a structure as of January 1st">Eff Yr Built<span class='ui-icon ui-icon-info' style='display:inline-block;cursor:help;'></span></th><th align="center">Gross Area</th><th align="center">Living Area</th><th align="center">Stories</th></tr></thead><tbody><tr class="gridrow"><td><a href="/propertysearch/Building/Show?strap=0046050008&num=1">690 EASTPOINTE PKWY SARASOTA, FL, 34232</a></td><td>1</td><td>4</td><td>2</td><td>0</td><td>1986</td><td>2006</td><td>2,450</td><td>1,970</td><td>2</td></tr></tbody></table>
+<span class="h2" style="margin-top:10px;margin-bottom:18px;">Extra Features</span>
+        
+
+
+<table class="grid"><thead><tr><th align="center">line #</th><th align="center">Building Number</th><th align="center">Description</th><th align="center">Units</th><th align="center">Unit Type</th><th align="center">Year</th></tr></thead><tbody><tr class="gridrow"><td>1</td><td style="width:130px;">1</td><td>Screened Enclosure</td><td>987</td><td>SF</td><td>1986</td></tr><tr class="gridrow_alternate"><td>2</td><td style="width:130px;">1</td><td>Patio - concrete or Pavers</td><td>649</td><td>SF</td><td>1986</td></tr><tr class="gridrow"><td>3</td><td style="width:130px;">1</td><td>Swimming Pool</td><td>338</td><td>SF</td><td>1986</td></tr></tbody></table>
+    
+
+
+<div style="position:relative;margin-top:10px;padding-bottom:10px">
+    <span class="h2" style="margin-bottom:18px;">Values</span>
+
+    <table class="grid"><thead><tr><th align="center">Year</th><th align="center">Land</th><th align="center">Building</th><th align="center">Extra Feature</th><th align="center">Just</th><th align="center">Assessed</th><th align="center">Exemptions</th><th align="center">Taxable</th><th align="center" title="Only homestead cap amounts are eligible for portability">Cap <a style='display:inline-block;cursor:help;' class='ui-icon ui-icon-info'></a></th></tr></thead><tbody><tr class="gridrow"><td style="text-align: center;width:2px;"><a style='display:inline-block;width:20px;' class='ui-icon-blank'></a>&nbsp;2023</td><td style="width:80px;text-align:center">$123,500</td><td style="width:80px;text-align:center">$250,700</td><td style="width:80px;text-align:center">$41,700</td><td style="width:80px;text-align:center;">$415,900</td><td style="width:80px;text-align:center">$172,122</td><td style="width:80px;text-align:center">$55,000</td><td style="width:80px;text-align:center">$117,122</td><td style="width:80px;text-align:center">$243,778</td></tr><tr class="gridrow_alternate"><td style="text-align: center;width:2px;"><a style='display:inline-block;width:20px;' class='ui-icon-blank'></a>&nbsp;2022</td><td style="width:80px;text-align:center">$123,500</td><td style="width:80px;text-align:center">$226,300</td><td style="width:80px;text-align:center">$46,400</td><td style="width:80px;text-align:center;">$396,200</td><td style="width:80px;text-align:center">$167,109</td><td style="width:80px;text-align:center">$50,500</td><td style="width:80px;text-align:center">$116,609</td><td style="width:80px;text-align:center">$229,091</td></tr><tr class="gridrow"><td style="text-align: center;width:2px;"><a style='display:inline-block;width:20px;' class='ui-icon-blank'></a>&nbsp;2021</td><td style="width:80px;text-align:center">$78,600</td><td style="width:80px;text-align:center">$176,900</td><td style="width:80px;text-align:center">$32,300</td><td style="width:80px;text-align:center;">$287,800</td><td style="width:80px;text-align:center">$162,242</td><td style="width:80px;text-align:center">$50,500</td><td style="width:80px;text-align:center">$111,742</td><td style="width:80px;text-align:center">$125,558</td></tr><tr class="gridrow_alternate"><td style="text-align: center;width:2px;"><a style='display:inline-block;width:20px;' class='ui-icon-blank'></a>&nbsp;2020</td><td style="width:80px;text-align:center">$67,400</td><td style="width:80px;text-align:center">$154,300</td><td style="width:80px;text-align:center">$34,700</td><td style="width:80px;text-align:center;">$256,400</td><td style="width:80px;text-align:center">$147,675</td><td style="width:80px;text-align:center">$50,500</td><td style="width:80px;text-align:center">$97,175</td><td style="width:80px;text-align:center">$108,725</td></tr><tr class="gridrow"><td style="text-align: center;width:2px;"><a style='display:inline-block;width:20px;' class='ui-icon-blank'></a>&nbsp;2019</td><td style="width:80px;text-align:center">$70,500</td><td style="width:80px;text-align:center">$140,000</td><td style="width:80px;text-align:center">$21,200</td><td style="width:80px;text-align:center;">$231,700</td><td style="width:80px;text-align:center">$144,355</td><td style="width:80px;text-align:center">$50,500</td><td style="width:80px;text-align:center">$93,855</td><td style="width:80px;text-align:center">$87,345</td></tr><tr class="gridrow_alternate"><td style="text-align: center;width:2px;"><a style='display:inline-block;width:20px;' class='ui-icon-blank'></a>&nbsp;2018</td><td style="width:80px;text-align:center">$68,700</td><td style="width:80px;text-align:center">$147,700</td><td style="width:80px;text-align:center">$18,000</td><td style="width:80px;text-align:center;">$234,400</td><td style="width:80px;text-align:center">$141,663</td><td style="width:80px;text-align:center">$50,500</td><td style="width:80px;text-align:center">$91,163</td><td style="width:80px;text-align:center">$92,737</td></tr><tr class="gridrow"><td style="text-align: center;width:2px;"><a style='display:inline-block;width:20px;' class='ui-icon-blank'></a>&nbsp;2017</td><td style="width:80px;text-align:center">$61,100</td><td style="width:80px;text-align:center">$141,700</td><td style="width:80px;text-align:center">$18,400</td><td style="width:80px;text-align:center;">$221,200</td><td style="width:80px;text-align:center">$138,749</td><td style="width:80px;text-align:center">$50,500</td><td style="width:80px;text-align:center">$88,249</td><td style="width:80px;text-align:center">$82,451</td></tr><tr class="gridrow_alternate"><td style="text-align: center;width:2px;"><a style='display:inline-block;width:20px;' class='ui-icon-blank'></a>&nbsp;2016</td><td style="width:80px;text-align:center">$57,100</td><td style="width:80px;text-align:center">$142,600</td><td style="width:80px;text-align:center">$17,500</td><td style="width:80px;text-align:center;">$217,200</td><td style="width:80px;text-align:center">$135,895</td><td style="width:80px;text-align:center">$50,500</td><td style="width:80px;text-align:center">$85,395</td><td style="width:80px;text-align:center">$81,305</td></tr><tr class="gridrow"><td style="text-align: center;width:2px;"><a style='display:inline-block;width:20px;' class='ui-icon-blank'></a>&nbsp;2015</td><td style="width:80px;text-align:center">$47,600</td><td style="width:80px;text-align:center">$125,100</td><td style="width:80px;text-align:center">$18,200</td><td style="width:80px;text-align:center;">$190,900</td><td style="width:80px;text-align:center">$134,950</td><td style="width:80px;text-align:center">$50,500</td><td style="width:80px;text-align:center">$84,450</td><td style="width:80px;text-align:center">$55,950</td></tr><tr class="gridrow_alternate"><td style="text-align: center;width:2px;"><a style='display:inline-block;width:20px;' class='ui-icon-blank'></a>&nbsp;2014</td><td style="width:80px;text-align:center">$44,400</td><td style="width:80px;text-align:center">$97,700</td><td style="width:80px;text-align:center">$16,800</td><td style="width:80px;text-align:center;">$158,900</td><td style="width:80px;text-align:center">$133,879</td><td style="width:80px;text-align:center">$50,500</td><td style="width:80px;text-align:center">$83,379</td><td style="width:80px;text-align:center">$25,021</td></tr></tbody></table>
+
+</div>
+
+
+
+
+
+
+<div id="exemptions"><span class="h2" style="margin-top:10px;margin-bottom:18px;">Current Exemptions</span>
+
+<table class="grid"><thead><tr><th title="First year the taxpayer received this exemption" style="width:150px;text-align:center">Grant Year <a style='display:inline-block;cursor:help;' class='ui-icon ui-icon-info'></a></th><th style="width:100px;text-align:center">Value</th><th></th></tr></thead><tbody><tr class="gridrow"><td>2013</td><td>$25,000.00</td><td></td></tr><tr class="gridrow_alternate"><td>2013</td><td>$25,000.00</td><td></td></tr><tr class="gridrow"><td>2014</td><td>$5,000.00</td><td></td></tr></tbody></table></div>
+
+<span class="h2" style="margin-top:10px;">Sales &amp; Transfers</span>
+<div style="margin-bottom:18px;margin-top:10px;">
+            <a class="app-links" href="/propertysearch/Lookup/QualCode?strap=0046050008">View Qualification Codes</a>&nbsp;
+            <a class="app-links" href="/propertysearch/Lookup/InstrumentType?strap=0046050008">View Instrument Types</a>
+</div>
+
+<table class="grid"><thead><tr><th>Transfer Date</th><th>Recorded Consideration</th><th>Instrument Number</th><th>Qualification Code</th><th>Grantor/Seller</th><th>Instrument Type</th></tr></thead><tbody><tr class="gridrow"><td>4/5/2022</td><td>$0</td><td><a title="This link will redirect you to the Sarasota Clerk of the Court's website" href='https://secure.sarasotaclerk.com/viewtiff.aspx?intrnum=2022063593'>2022063593</a></td><td>11</td><td>HATATAH SUZANNE M</td><td>WD</td></tr><tr class="gridrow_alternate"><td>4/5/2022</td><td>$0</td><td><a title="This link will redirect you to the Sarasota Clerk of the Court's website" href='https://secure.sarasotaclerk.com/viewtiff.aspx?intrnum=2022063591'>2022063591</a></td><td>11</td><td>SUZANNE M HATATAH REVOCABLE LIVING TRUST</td><td>WD</td></tr><tr class="gridrow"><td>4/26/2019</td><td>$100</td><td><a title="This link will redirect you to the Sarasota Clerk of the Court's website" href='https://secure.sarasotaclerk.com/viewtiff.aspx?intrnum=2019055422'>2019055422</a></td><td>11</td><td>HATATAH SUZANNE M </td><td>WD</td></tr><tr class="gridrow_alternate"><td>5/22/2012</td><td>$156,900</td><td><a title="This link will redirect you to the Sarasota Clerk of the Court's website" href='https://secure.sarasotaclerk.com/viewtiff.aspx?intrnum=2012071083'>2012071083</a></td><td>12</td><td>KONDAUR CAPITAL CORP,</td><td>WD</td></tr><tr class="gridrow"><td>2/8/2012</td><td>$78,300</td><td><a title="This link will redirect you to the Sarasota Clerk of the Court's website" href='https://secure.sarasotaclerk.com/viewtiff.aspx?intrnum=2012022577'>2012022577</a></td><td>12</td><td>EVANS,ROBYN L</td><td>CT</td></tr><tr class="gridrow_alternate"><td>5/21/2004</td><td>$245,000</td><td><a title="This link will redirect you to the Sarasota Clerk of the Court's website" href='https://secure.sarasotaclerk.com/viewtiff.aspx?intrnum=2004102557'>2004102557</a></td><td>01</td><td>BANKS,ANDREW L</td><td>WD</td></tr><tr class="gridrow"><td>3/8/2004</td><td>$188,000</td><td><a title="This link will redirect you to the Sarasota Clerk of the Court's website" href='https://secure.sarasotaclerk.com/viewtiff.aspx?intrnum=2004045246'>2004045246</a></td><td>01</td><td>O LOUGHLIN MICHAEL P,</td><td>WD</td></tr><tr class="gridrow_alternate"><td>9/9/1996</td><td>$136,000</td><td><a title="This link will redirect you to the Sarasota Clerk of the Court's website" href='https://secure.sarasotaclerk.com/viewtiff.aspx?book=2892&page=146'>2892/146</a></td><td>01</td><td>DAVIS ALAN R &amp; DIANE M</td><td>WD</td></tr><tr class="gridrow"><td>6/1/1986</td><td>$102,400</td><td><a title="This link will redirect you to the Sarasota Clerk of the Court's website" href='https://secure.sarasotaclerk.com/viewtiff.aspx?book=1866&page=2692'>1866/2692</a></td><td>01</td><td></td><td>NA</td></tr></tbody></table>
+<span class="h2" style="margin-top:10px;margin-bottom:18px;">Associated Tangible Accounts</span>
+            <table class="grid"><thead><tr><th></th></tr></thead><tbody><tr><td>There are no associated tangible accounts for this parcel</td></tr></tbody></table>
+<div style="height:auto;margin:20px 0 20px 0;font-weight:bold;">Property record information last updated on: 8/4/2023</div>
+
+<div class="flood">
+    <span style="margin-top: 10px; margin-bottom: 18px; font-size: 18px; font-family: Calibri">FEMA Flood Zone (Data provided by Sarasota County Government as of 7/31/2023)
+	<p>Different portions of a property can be in different flood zones. Please click on MAP link below to see the flood zones.</p>
+	</span>
+<table id="FloodDatas" class="grid"><thead><tr><th align="center" title="Official map of a community on which FEMA has delineated the Special Flood Hazard Areas (SFHAs), the Base Flood Elevations (BFEs) and the risk premium zones applicable to the community.">FIRM Panel</th><th align="center" title="Channel, river, watercourse and adjacent land areas that must be reserved for flood discharge.">Floodway</th><th align="center" title="In or Out of the Special Flood Hazard Area (Areas designated on the FEMA flood maps starting with the letter A or V)">SFHA ***</th><th align="center" title="See definition of flood zones: https://www.fema.gov/national-flood-insurance-program/definitions">Flood Zone **</th><th align="center" title="County, City, Tribal or Community identifier, responsible for floodplain management.">Community</th><th align="center" title="Highest elevation of water surface associated with the Base Flood as shown on the FIRM, CFHA or Florida Building code (whichever is higher).">Base Flood Elevation (ft)</th><th align="center" title="Community Flood Hazard Area. The land identified in the Local Flood Study (LFS) as being in a floodplain within unincorporated Sarasota County subject to a 1%  or greater chance of flooding in any given year.">CFHA *</th></tr></thead><tbody><tr class="gridrow"><td>0154F</td><td>OUT</td><td>OUT</td><td>X</td><td>125144</td><td></td><td>IN</td></tr></tbody></table>
+
+
+ 
+            <p>
+        * If your property is in a SFHA or CFHA, use the <a href=https://ags3.scgov.net/SarcoFlood/?find=0046050008 target="_blank">map</a> to determine if the building footprint is within the flood area. <br/>
+        ** For more information on flood and flood related issues specific to this property, call (941) 861-5000 <br/>
+		*** Federal law requires flood insurance for all properties in SFHAs with federally backed mortgages.
+        <br/>For general questions regarding the flood map, call (941) 861-5000.
+            </p>
+
+
+
+</div>
+
+<div id="tax-link-message" title="Do you want to leave the Property Appraiser's website?" style="display: none;">
+    <br />
+    <em>Tax bills are generated by the Tax Collector.</em>
+    <p>
+        <span class="ui-icon ui-icon-alert" style="float: left; margin: 0 7px 20px 0;"></span>You are being re-directed to the Sarasota County Tax Collector's website where you can view current and past bills.<br />
+        <br />
+        Do you want to continue?
+    </p>
+</div>
+<div id="building-container" title="Building Details" style="display: none;"></div>
+
+
+    </div>
+
+    <footer class="site-footer" style="margin-top:30px;">
+        <div class="hide-on-print footercaption">Serving Our Community with Pride and Accountability</div>
+        <div class="hide-on-print">
+            <a href="/our-office/Glossary/">Glossary</a>&nbsp;|&nbsp;<a href="/accessibility-disclaimers/">Accessibility & Disclaimers</a>&nbsp;|&nbsp;<a href="/contact-us/">Contact Us</a>&nbsp;|&nbsp;<a href="/our-office/career-opportunities/">Career Opportunities</a>
+        </div>
+        <div>
+            <p>Sarasota County Property Appraiser - Ph. 941.861.8200 Fax. 941.861.8260 - 2001 Adams Lane, Sarasota, FL, 34237</p>
+        </div>
+    </footer>
+
+    <div id="loading_dialog" style="display: none;" class="hide-on-print"></div>
+
+    <script src="/propertysearch/bundles/jquery?v=gdql_X80944Qph4oYO6y83PuzqoV_ic9q5UUm2NV-9I1"></script>
+<script src="/propertysearch/bundles/jqueryui?v="></script>
+<script src="/propertysearch/bundles/scpa?v=ucAaUHD9Cta5Gr8mJutqWtpMBVZMqaddND1Zv35Hj801"></script>
+<script src="/propertysearch/bundles/select2?v=hOOu3qclIXihXJtqT3g-s8ncBdOL6Ndecowxw5HHBrg1"></script>
+<script src="/propertysearch/bundles/osvaldas?v=BtWwpGlMIMGSlUIV955aMwJd4fkwjwhw7Bwg9uZrUFs1"></script>
+
+
+    <script>
+        $(document).ready(function ()
+        {
+            JSONautoCompleteWrapper($("#Subdivision"), $("#Subdivision"), "/propertysearch/api/srch/ListSubs");
+            JSONautoCompleteWrapper($("#UseCode"), $("#UseCode"), "/propertysearch/api/srch/ListUseCodes");
+            AddressAutocompleteWrapper($("#AddressKeywords"), $("#AddressKeywords"), "/propertysearch/api/srch/ListAddresses");
+            JSONautoCompleteWrapper($("#OwnerKeywords"), $("#OwnerKeywords"), "/propertysearch/api/srch/ListOwners");
+            $(document).tooltip({
+                position: { my: "left top+15", at: "left bottom", collision: "flipfit" }, track: true,
+                tooltipClass: "custom-tooltip"
+            });
+
+        });
+    </script>
+
+    
+    <script>
+        $(document).ready(function () {
+            //tabify content
+            $("#search").val("");
+            $("#tabs").tabs();
+            $("#print-link").button({icons: { secondary: "ui-icon-print" }}).click(function () { window.print(); });
+            $("#disabled-link").click(function (event) {
+                event.preventDefault();
+                if ($(this).attr('a') !== undefined)
+                    $(this).attr('a').removeAttr('href')
+            });
+            $("#map-link").click(function (event) {event.preventDefault();window.open('https://ags3.scgov.net/scpa/?esearch=0046050008&slayer=0');});
+            $("#map-link,#disabled-link").button({icons: {secondary: "ui-icon-extlink"}});
+            $("#tax-link").click(function (event) {
+                event.preventDefault();
+                var url = this.href;
+                $("#tax-link-message").dialog(
+                    {
+                        resizable: false,
+                        height: 250,
+                        width: 500,
+                        modal: true,
+                        buttons:
+                        {
+                            "Yes, I want to leave": function () {
+                                $(this).dialog("close");
+                                //window.open('');
+                                window.open(url);
+                            },
+                            "No": function () {
+                                $(this).dialog("close");
+                            }
+                        }
+                    });
+            });
+            $("#trim-link,#disabled-link").button({ icons: { secondary: "ui-icon-arrowthickstop-1-s" } });
+            $("#tax-link,#disabled-link").button({ icons: { secondary: "ui-icon-extlink" } });
+            $("#prc-link,#disabled-link").button({icons: {secondary: "ui-icon-arrowthickstop-1-s"}});
+            $("#button-set-1").buttonset();
+            $("#button-set-2").buttonset();
+            $("#Buildings a").click(function (event) {
+                event.preventDefault();
+                $.ajax({
+                    url: this.href,
+                    type: "get",
+                    cache: false,
+                    success: function (results) {
+                        $('#building-container').html(results);
+                        $("#building-container").dialog(
+                            {
+                                resizable: true,
+                                height: 810,
+                                width: 600,
+                                modal: true,
+                                buttons:
+                                {
+                                    "Close": function () {
+                                        $(this).dialog("close");
+                                    }
+                                }
+                            });
+                    }
+                });
+            });
+        });
+        function showInstrument(i) {
+            var bp = i.split("/");
+            if (bp.length > 1) {
+                showBookPage(bp[0], bp[1]);
+                return;
+            }
+            $('#insFrom').val(i);
+            $('#insTo').val(i);
+            $('#frminstrument').submit();
+        }
+        function showBookPage(b, p) {
+            $('#insBook').val(b);
+            $('#insPage').val(p);
+            $('#frminstrument').submit();
+        }
+
+        // "horizontal vertical" alignment
+        $("#prevstrap").tooltip({
+            position: {
+                my: "center center",
+                at: "left-160 center-22",
+                of: "#targetElemForTooltips",
+				collision: "flipfit"
+            }
+        });
+        $("#nextstrap").tooltip({
+            position: {
+                my: "center center",
+                at: "center+160 center-22",
+                of: "#targetElemForTooltips",
+				collision: "flipfit"
+            }
+        });
+    </script>
+
+
+    <!--[if lt IE 1]>
+        <script>$(document).ready(function() {$("#browser-warning").click(function()
+            {$("#browser-warning-window").slideUp(350);setCookie("ignore-warning", "ignore", 14);});});</script>
+    <![endif]-->
+
+    <script src="scripts/userway_widget.js" type="text/javascript"></script>
+
+
+</body>
+</html>
